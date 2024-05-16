@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#FFFF00"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#FFFF00"
+                android:text="Changing Rows"
+                android:textSize="120px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#FFFF00"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/route_id_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Employee ID"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:minHeight="58dp" />
+
+                    <EditText
+                        android:id="@+id/route_name_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Employee name"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:minHeight="58dp" />
+
+                    <EditText
+                        android:id="@+id/departure_date_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Employee age"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:minHeight="58dp" />
+
+                    <EditText
+                        android:id="@+id/arrival_date_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Employee length of service"
+                        android:imeOptions="actionDone"
+                        android:inputType="date"
+                        android:minHeight="58dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/edit_confirmation_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:backgroundTint="#000000"
+                    android:onClick="onClickEditConfirmationButton"
+                    android:text="Apply" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
